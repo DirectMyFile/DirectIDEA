@@ -1,32 +1,45 @@
 <idea-plugin version="2">
-  <id>org.directcode.idea</id>
-  <name>DirectIDEA</name>
-  <version>1.0</version>
-  <vendor email="kaendfinger@gmail.com" url="http://directmyfile.github.io/">DirectCode</vendor>
+    <id>org.directcode.idea</id>
+    <name>DirectIDEA</name>
+    <version>1.0</version>
+    <vendor email="kaendfinger@gmail.com" url="http://directmyfile.github.io/">DirectCode</vendor>
 
-  <description><![CDATA[
+    <description><![CDATA[
       DirectCode IDEA Plugin for adding features to IDEA, the best IDE ever!
     ]]></description>
 
-  <change-notes><![CDATA[
+    <change-notes><![CDATA[
       Initial Creation
     ]]>
-  </change-notes>
+    </change-notes>
 
-  <idea-version since-build="131"/>
+    <idea-version since-build="131"/>
 
-  <depends>com.intellij.modules.lang</depends>
+    <depends>com.intellij.modules.lang</depends>
+    <depends>org.jetbrains.plugins.github</depends>
 
-  <extensions defaultExtensionNs="com.intellij">
-  </extensions>
+    <extensions defaultExtensionNs="com.intellij">
+    </extensions>
 
-  <application-components>
-  </application-components>
+    <application-components>
+        <component>
+            <implementation-class>org.directcode.idea.StartupComponent</implementation-class>
+        </component>
+    </application-components>
 
-  <project-components>
-  </project-components>
+    <project-components>
+    </project-components>
 
-  <actions>
-  </actions>
+    <actions>
+        <action id="Open TeamCity"
+                class="org.directcode.idea.OpenTeamCityAction"
+                icon="icons/teamcity.png"
+                text="Open TeamCity"
+                description="Opens the DirectCode TeamCity">
+            <add-to-group group-id="MainToolBar" anchor="last"/>
+        </action>
+    </actions>
 
+    <module-components>
+    </module-components>
 </idea-plugin>
