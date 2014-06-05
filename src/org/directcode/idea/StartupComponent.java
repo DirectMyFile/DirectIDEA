@@ -7,12 +7,12 @@ public class StartupComponent implements ApplicationComponent {
 
     @Override
     public void initComponent() {
-        Util.LOG.debug("Initializing Startup Component");
+        Util.debug("Initializing Startup Component");
     }
 
     @Override
     public void disposeComponent() {
-        Util.LOG.debug("Disposing Startup Component");
+        Util.debug("Disposing Startup Component");
     }
 
     @NotNull

@@ -6,4 +6,8 @@ public class GitHubUtil {
     public static GithubSettings settings() {
         return GithubSettings.getInstance();
     }
+
+    public static String username() {
+        return settings().getLogin();
+    }
 }

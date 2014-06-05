@@ -24,4 +24,8 @@ public class Util {
     public static String home(String path) {
         return System.getProperty("user.home") + "/" + path;
     }
+
+    public static void debug(String line) {
+        LOG.debug(line);
+    }
 }

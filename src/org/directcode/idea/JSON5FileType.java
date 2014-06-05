@@ -18,7 +18,7 @@ public class JSON5FileType extends LanguageFileType {
 
     protected JSON5FileType() {
         super(JavaScriptFileType.INSTANCE.getLanguage());
-        Util.LOG.debug("Created JSON5 File Type");
+        Util.debug("Created JSON5 File Type");
     }
 
     @NotNull
