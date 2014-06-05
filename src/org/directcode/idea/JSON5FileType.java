@@ -1,6 +1,7 @@
 package org.directcode.idea;
 
 import com.intellij.lang.javascript.JavaScriptFileType;
+import com.intellij.lang.javascript.json.JSONFileType;
 import com.intellij.openapi.fileTypes.LanguageFileType;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -41,6 +42,6 @@ public class JSON5FileType extends LanguageFileType {
     @Nullable
     @Override
     public Icon getIcon() {
-        return JavaScriptFileType.INSTANCE.getIcon();
+        return JSONFileType.JSON.getIcon();
     }
 }
