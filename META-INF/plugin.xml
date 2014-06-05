@@ -6,6 +6,13 @@
 
     <description><![CDATA[
       DirectCode IDEA Plugin for adding features to IDEA, the best IDE ever!
+
+      <b>Features</b>:
+
+      <ul>
+        <li>DirectCode TeamCity Toolbar Shortcut</li>
+        <li>JSON 5 File Type Association</li>
+      </ul>
     ]]></description>
 
     <change-notes><![CDATA[
@@ -16,9 +23,11 @@
     <idea-version since-build="131"/>
 
     <depends>com.intellij.modules.lang</depends>
+    <depends>JavaScript</depends>
     <depends>org.jetbrains.plugins.github</depends>
 
     <extensions defaultExtensionNs="com.intellij">
+        <fileTypeFactory implementation="org.directcode.idea.JSON5FileTypeFactory"/>
     </extensions>
 
     <application-components>
