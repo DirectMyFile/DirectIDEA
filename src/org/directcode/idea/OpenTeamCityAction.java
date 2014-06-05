@@ -7,6 +7,7 @@ import com.intellij.openapi.actionSystem.AnActionEvent;
 public class OpenTeamCityAction extends AnAction {
     @Override
     public void actionPerformed(AnActionEvent e) {
+        Util.LOG.debug("Launching TeamCity");
         BrowserLauncher.getInstance().open(Configuration.TEAMCITY_URL);
     }
 }
