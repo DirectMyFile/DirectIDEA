@@ -3,9 +3,9 @@
     <output-path>$PROJECT_DIR$/out/artifacts</output-path>
     <root id="archive" name="DirectIDEA.jar">
       <element id="module-output" name="DirectIDEA" />
-      <element id="dir-copy" path="$PROJECT_DIR$/META-INF" />
       <element id="directory" name="META-INF">
         <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
+        <element id="dir-copy" path="$PROJECT_DIR$/META-INF" />
       </element>
     </root>
   </artifact>
