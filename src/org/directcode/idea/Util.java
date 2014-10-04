@@ -14,7 +14,7 @@ public class Util {
     }
 
     public static boolean maybeMember() {
-        return fileExists(home(".devtools")) || fileExists(home(".directcode"));
+        return fileExists(home(".devtools")) || fileExists(home(".directcode")) || fileExists(home("DirectCode"));
     }
 
     public static boolean fileExists(String path) {
