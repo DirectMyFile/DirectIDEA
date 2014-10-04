@@ -2,6 +2,7 @@ package org.directcode.idea;
 
 import com.intellij.openapi.diagnostic.Logger;
 import org.apache.log4j.Level;
+import org.jetbrains.annotations.NotNull;
 
 import java.io.File;
 
@@ -17,10 +18,11 @@ public class Util {
         return fileExists(home(".devtools")) || fileExists(home(".directcode")) || fileExists(home("DirectCode"));
     }
 
-    public static boolean fileExists(String path) {
+    public static boolean fileExists(@NotNull String path) {
         return new File(path).exists();
     }
 
+    @NotNull
     public static String home(String path) {
         return System.getProperty("user.home") + "/" + path;
     }

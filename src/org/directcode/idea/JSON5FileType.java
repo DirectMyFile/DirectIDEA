@@ -10,11 +10,8 @@ import javax.swing.*;
 
 public class JSON5FileType extends LanguageFileType {
 
-    public static final JSON5FileType INSTANCE;
-
-    static {
-        INSTANCE = new JSON5FileType();
-    }
+    @NotNull
+    public static final JSON5FileType INSTANCE = new JSON5FileType();
 
     protected JSON5FileType() {
         super(JavaScriptFileType.INSTANCE.getLanguage());

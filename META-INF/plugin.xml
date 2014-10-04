@@ -2,7 +2,7 @@
     <id>org.directcode.idea</id>
     <name>DirectIDEA</name>
     <version>1.0</version>
-    <vendor email="kaendfinger@gmail.com" url="http://directmyfile.github.io/">DirectCode</vendor>
+    <vendor email="kaendfinger@gmail.com" url="http://directcode.org">DirectCode</vendor>
 
     <description><![CDATA[
       DirectCode IDEA Plugin for adding features to IDEA, the best IDE ever!

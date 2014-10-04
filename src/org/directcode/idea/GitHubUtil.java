@@ -1,5 +1,6 @@
 package org.directcode.idea;
 
+import org.jetbrains.annotations.Nullable;
 import org.jetbrains.plugins.github.util.GithubSettings;
 
 public class GitHubUtil {
@@ -7,6 +8,7 @@ public class GitHubUtil {
         return GithubSettings.getInstance();
     }
 
+    @Nullable
     public static String username() {
         return settings().getLogin();
     }
