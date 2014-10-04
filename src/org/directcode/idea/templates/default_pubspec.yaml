@@ -1,0 +1,5 @@
+name: package_name
+description: Some Package
+author: Your Name <your.email@some.email.com>
+dev_dependencies:
+  unittest: any
